@@ -13,5 +13,5 @@ public enum Season {
     /** 閑散期 */
     Low,
     /** 最閑散期 */
-    VeryLow
+    VeryLow,
 }
