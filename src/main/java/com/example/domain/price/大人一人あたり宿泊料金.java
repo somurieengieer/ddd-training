@@ -1,4 +1,4 @@
-package com.example.domain;
+package com.example.domain.price;
 
 public class 大人一人あたり宿泊料金 {
 

@@ -1,4 +1,4 @@
-package com.example.domain;
+package com.example.domain.reservation;
 
 public enum 宿泊客 {
     大人,

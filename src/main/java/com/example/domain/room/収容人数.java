@@ -1,4 +1,7 @@
-package com.example.domain;
+package com.example.domain.room;
+
+import com.example.domain.price.大人一人あたり宿泊料金;
+import com.example.domain.price.時期;
 
 public enum 収容人数 {
 

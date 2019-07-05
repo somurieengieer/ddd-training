@@ -1,4 +1,8 @@
-package com.example.domain;
+package com.example.domain.reservation;
+
+import com.example.domain.room.収容人数;
+import com.example.domain.price.時期;
+import com.example.domain.room.部屋タイプ;
 
 public class 予約 {
 

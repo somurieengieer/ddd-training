@@ -1,4 +1,6 @@
-package com.example.domain;
+package com.example.domain.reservation;
+
+import com.example.domain.price.時期;
 
 import java.time.LocalDate;
 
