@@ -1,4 +1,4 @@
-package com.example.domain;
+package com.example.domain.price;
 
 public class 一室あたり料金 {
 
