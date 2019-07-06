@@ -1,7 +1,7 @@
 package com.example.domain.fee.capacity;
 
 import com.example.domain.fee.season.時期区分;
-import com.example.domain.price.宿泊料金;
+import com.example.domain.fee.料金;
 
 public enum 収容人数区分 {
 
@@ -16,7 +16,7 @@ public enum 収容人数区分 {
         this.capacity = capacity;
     }
 
-    public 宿泊料金 料金(時期区分 seasonType) {
+    public 料金 料金(時期区分 seasonType) {
         return capacity.料金(seasonType);
     }
 }
