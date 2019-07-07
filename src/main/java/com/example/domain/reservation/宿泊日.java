@@ -1,6 +1,6 @@
 package com.example.domain.reservation;
 
-import com.example.domain.price.時期;
+import com.example.domain.fee.season.時期区分;
 
 import java.time.LocalDate;
 
@@ -12,8 +12,9 @@ public class 宿泊日 {
         this.value = value;
     }
 
-    public 時期 toSeason() {
+    public 時期区分 toSeason() {
+
         // TODO dummy logic
-        return 時期.再繁忙期;
+        return 時期区分.繁忙期;
     }
 }
