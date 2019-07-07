@@ -14,5 +14,5 @@ public class 予約 {
 
     収容人数区分 roomCapacityType;
 
-    同部屋に宿泊する客一覧 roomGuests;
+    宿泊客一覧 roomGuests;
 }
