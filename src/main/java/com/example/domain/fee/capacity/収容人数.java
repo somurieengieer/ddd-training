@@ -5,6 +5,7 @@ import com.example.domain.fee.料金;
 import com.example.domain.reservation.宿泊人数;
 
 public interface 収容人数 {
+
     料金 料金(時期区分 season);
 
     int capacity();
@@ -12,4 +13,10 @@ public interface 収容人数 {
     default boolean 適用可否(宿泊人数 numberOfPeople) {
         return numberOfPeople.value() <= this.capacity();
     }
+
+    収容人数 次に小さい収容人数();
+
+    収容人数 次に小さい収容人数(収容人数 numberOfCapacity);
+
+    収容人数 収容人数区分判定(宿泊人数 numberOfPeople);
 }

@@ -2,6 +2,7 @@ package com.example.domain.fee.capacity;
 
 import com.example.domain.fee.season.時期区分;
 import com.example.domain.fee.料金;
+import com.example.domain.reservation.宿泊人数;
 
 public enum 収容人数区分 {
 
@@ -18,5 +19,11 @@ public enum 収容人数区分 {
 
     public 料金 料金(時期区分 seasonType) {
         return capacity.料金(seasonType);
+    }
+
+    public 収容人数 収容人数判定(宿泊人数 numberOfPeople) {
+        一名一室 chain = new 一名一室();
+        chain.次に小さい収容人数(new 二名一室());
+        return chain.収容人数区分判定(numberOfPeople);
     }
 }
