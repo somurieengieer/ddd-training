@@ -22,8 +22,6 @@ public enum 収容人数区分 {
     }
 
     public 収容人数 収容人数判定(宿泊人数 numberOfPeople) {
-        一名一室 chain = new 一名一室();
-        chain.次に小さい収容人数(new 二名一室());
-        return chain.収容人数区分判定(numberOfPeople);
+        return new 一名一室(new 二名一室()).収容人数区分判定(numberOfPeople);
     }
 }

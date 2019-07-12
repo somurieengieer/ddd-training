@@ -10,6 +10,13 @@ public class 二名一室 implements 収容人数 {
 
     収容人数 nextCapacity;
 
+    public 二名一室() {
+    }
+
+    public 二名一室(収容人数 nextCapacity) {
+        this.nextCapacity = nextCapacity;
+    }
+
     @Override
     public int capacity() {
         return CAPACITY;
@@ -23,16 +30,15 @@ public class 二名一室 implements 収容人数 {
         return nextCapacity;
     }
 
-    public 収容人数 次に小さい収容人数(収容人数 numberOfCapacity) {
-        nextCapacity = numberOfCapacity;
-        return nextCapacity;
-    }
-
     public 収容人数 収容人数区分判定(宿泊人数 numberOfPeople) {
-        if (適用可否(numberOfPeople)) {
+        if (適用可能(numberOfPeople)) {
             return this;
         } else {
             return nextCapacity.収容人数区分判定(numberOfPeople);
         }
+    }
+
+    private boolean 適用可能(宿泊人数 numberOfPeople) {
+        return numberOfPeople.value() <= this.capacity();
     }
 }
