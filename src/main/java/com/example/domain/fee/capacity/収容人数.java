@@ -14,8 +14,6 @@ public interface 収容人数 {
         return numberOfPeople.value() <= this.capacity();
     }
 
-    収容人数 次に小さい収容人数();
-
     収容人数 次に小さい収容人数(収容人数 numberOfCapacity);
 
     収容人数 収容人数区分判定(宿泊人数 numberOfPeople);
