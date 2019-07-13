@@ -6,9 +6,11 @@ import com.example.domain.reservation.宿泊人数;
 
 public interface 収容人数 {
 
-    料金 料金(時期区分 season);
-
     int capacity();
 
     収容人数 収容人数区分判定(宿泊人数 numberOfPeople);
+
+    料金 料金(時期区分 seasonType);
+
+    料金 特別室追加料金(時期区分 seasonType);
 }

@@ -15,4 +15,14 @@ public class 繁忙期 implements 時期 {
     public 料金 料金(二名一室 一名一室) {
         return new 料金(2800);
     }
+
+    @Override
+    public 料金 特別室追加料金(一名一室 一名一室) {
+        return new 料金(3000);
+    }
+
+    @Override
+    public 料金 特別室追加料金(二名一室 一名一室) {
+        return new 料金(3000);
+    }
 }

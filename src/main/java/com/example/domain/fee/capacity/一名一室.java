@@ -22,8 +22,14 @@ public class 一名一室 implements 収容人数 {
         return CAPACITY;
     }
 
-    public 料金 料金(時期区分 season) {
-        return season.料金(this);
+    @Override
+    public 料金 料金(時期区分 seasonType) {
+        return seasonType.料金(this);
+    }
+
+    @Override
+    public 料金 特別室追加料金(時期区分 seasonType) {
+        return seasonType.特別室追加料金(this);
     }
 
     public 収容人数 次に小さい収容人数() {

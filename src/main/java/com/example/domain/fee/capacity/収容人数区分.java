@@ -24,4 +24,8 @@ public enum 収容人数区分 {
     public 収容人数 収容人数判定(宿泊人数 numberOfPeople) {
         return new 一名一室(new 二名一室()).収容人数区分判定(numberOfPeople);
     }
+
+    public 料金 特別室追加料金(時期区分 seasonType) {
+        return capacity.特別室追加料金(seasonType);
+    }
 }
