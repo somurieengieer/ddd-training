@@ -8,6 +8,10 @@ public class 料金 {
         this.value = value;
     }
 
+    public 料金 加算(料金 addPrice) {
+        return new 料金(this.value + addPrice.value);
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

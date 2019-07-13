@@ -15,4 +15,14 @@ public class 閑散期 implements 時期 {
     public 料金 料金(二名一室 一名一室) {
         return new 料金(1200);
     }
+
+    @Override
+    public 料金 特別室追加料金(一名一室 一名一室) {
+        return new 料金(3000);
+    }
+
+    @Override
+    public 料金 特別室追加料金(二名一室 一名一室) {
+        return new 料金(3000);
+    }
 }

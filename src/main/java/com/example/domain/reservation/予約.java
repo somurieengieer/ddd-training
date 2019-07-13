@@ -2,7 +2,7 @@ package com.example.domain.reservation;
 
 import com.example.domain.fee.capacity.収容人数区分;
 import com.example.domain.fee.season.時期区分;
-import com.example.domain.room.部屋タイプ;
+import com.example.domain.room.客室区分;
 
 public class 予約 {
 
@@ -10,7 +10,7 @@ public class 予約 {
 
     時期区分 seasonType;
 
-    部屋タイプ roomType;
+    客室区分 roomType;
 
     収容人数区分 roomCapacityType;
 

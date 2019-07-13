@@ -19,4 +19,8 @@ public enum 収容人数区分 {
     public 料金 料金(時期区分 seasonType) {
         return capacity.料金(seasonType);
     }
+
+    public 料金 特別室追加料金(時期区分 seasonType) {
+        return capacity.特別室追加料金(seasonType);
+    }
 }
