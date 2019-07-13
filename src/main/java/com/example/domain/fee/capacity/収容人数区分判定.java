@@ -8,9 +8,9 @@ public class 収容人数区分判定 {
     収容人数 capacity;
     収容人数 nextCapacity;
 
-    public 収容人数 収容人数() {
+    public 収容人数区分 収容人数区分() {
         if (適用可能(numberOfPeople)) {
-            return capacity;
+            return capacity.収容人数区分取得();
         } else {
             return nextCapacity.収容人数区分判定(numberOfPeople);
         }
