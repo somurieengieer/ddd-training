@@ -31,14 +31,7 @@ public class 二名一室 implements 収容人数 {
     }
 
     public 収容人数 収容人数区分判定(宿泊人数 numberOfPeople) {
-        if (適用可能(numberOfPeople)) {
-            return this;
-        } else {
-            return nextCapacity.収容人数区分判定(numberOfPeople);
-        }
+        return new 収容人数区分判定(numberOfPeople, this, nextCapacity).収容人数();
     }
 
-    private boolean 適用可能(宿泊人数 numberOfPeople) {
-        return numberOfPeople.value() <= this.capacity();
-    }
 }
