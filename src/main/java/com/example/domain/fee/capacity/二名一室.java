@@ -36,9 +36,4 @@ public class 二名一室 implements 収容人数 {
     public 収容人数区分 収容人数区分判定(宿泊人数 numberOfPeople) {
         return new 収容人数区分判定(numberOfPeople, this, nextCapacity).収容人数区分();
     }
-
-    @Override
-    public 収容人数区分 収容人数区分取得() {
-        return 収容人数区分.二名一室;
-    }
 }

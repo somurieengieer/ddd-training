@@ -10,7 +10,7 @@ public class 収容人数区分判定 {
 
     public 収容人数区分 収容人数区分() {
         if (適用可能(numberOfPeople)) {
-            return capacity.収容人数区分取得();
+            return 収容人数区分.収容人数区分生成(capacity);
         } else {
             return nextCapacity.収容人数区分判定(numberOfPeople);
         }

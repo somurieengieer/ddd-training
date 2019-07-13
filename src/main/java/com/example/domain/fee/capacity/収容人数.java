@@ -13,6 +13,4 @@ public interface 収容人数 {
     料金 特別室追加料金(時期区分 seasonType);
 
     収容人数区分 収容人数区分判定(宿泊人数 numberOfPeople);
-
-    収容人数区分 収容人数区分取得();
 }
