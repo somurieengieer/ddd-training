@@ -21,4 +21,12 @@ public enum 時期区分 {
     public 料金 料金(二名一室 capacity) {
         return season.料金(capacity);
     }
+
+    public 料金 特別室追加料金(一名一室 capacity) {
+        return season.特別室追加料金(capacity);
+    }
+
+    public 料金 特別室追加料金(二名一室 capacity) {
+        return season.特別室追加料金(capacity);
+    }
 }
