@@ -32,10 +32,6 @@ public class 二名一室 implements 収容人数 {
         return seasonType.特別室追加料金(this);
     }
 
-    public 収容人数 次に小さい収容人数() {
-        return nextCapacity;
-    }
-
     public 収容人数 収容人数区分判定(宿泊人数 numberOfPeople) {
         return new 収容人数区分判定(numberOfPeople, this, nextCapacity).収容人数();
     }
